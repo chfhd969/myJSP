@@ -13,7 +13,7 @@ public class FirstServlet extends HttpServlet{
 	public void init() throws ServletException {
 		System.out.println("init 메서드 호출");
 	}
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("doGet 메서드 호출");
@@ -23,5 +23,4 @@ public class FirstServlet extends HttpServlet{
 	public void destroy() {
 		System.out.println("distroy 메서드 호출");
 	}
-
 }

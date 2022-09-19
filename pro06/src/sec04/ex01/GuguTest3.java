@@ -23,36 +23,36 @@ public class GuguTest3 extends HttpServlet {
 	    // 전송된 dan의 값을 받아 온다.
 	    int dan = Integer.parseInt(request.getParameter("dan"));
 	
-	    out.print("<table border=1 width=800 align=center>");
+	    out.print(" <table border=1 width=800 align=center>");
 	    out.print("<tr align=center bgcolor='#FFFF66'>");
 	    out.print("<td colspan=4>" + dan + " 단 출력  </td>");
 	    out.print("</tr>");
 	
 	    // for 문을 이용해 연속해서 결과를 테이블 행으로 출력
 	    for (int i = 1; i < 10; i++) {
+	    	/*if 문을 이용해 행을 나타내는 <tr> 태그에 대해 교대로 다른 배경색을 적용*/
 	    	int z = i%2;
 	    	if(z == 0) {
-	    		out.print("<tr align=center bgcolor='#acfa58'>");
-		    }else {
-		        out.print("<tr align=center bgcolor='#81bef7'>");
-		    }
-	        out.print("<td width=300 >");
-	        out.print(i);
-	        out.print("<input type='checkbox'>");
-	        out.print("</td>");
-	        out.print("<td width=300 >");
-	        out.print(i);
-	        out.print("<input type='radio'>");
-	        out.print("</td>");
-	        out.print("<td width=300 >");
+	    		out.print("<tr align=center bgcolor='#acfa58'> ");
+	    	}else {
+	    		out.print("<tr align=center bgcolor='#81bef7'> ");
+	    	}
+	        /*각 행에 라디오 박스와 체크박스를 표시한다.*/
+            out.print("<td width=200> ");
+            out.print("<input  type='radio'  />" + i);
+            out.print("</td>");
+            out.print("<td width=200> ");
+            out.print("<input  type='checkbox'  />" + i);
+            out.print("</td>");     
+            
+	        out.print("<td width=400>");
 	        out.print(dan + " *  " + i);
 	        out.print("</td>");
-	        out.print("<td width=300>");
+	        out.print("<td width=400>");
 	        out.print(i * dan);
 	        out.print("</td>");
 	        out.print("</tr>");
-	    	
-	   }
+	    }
 	
 	    out.print("</table>");
 	}

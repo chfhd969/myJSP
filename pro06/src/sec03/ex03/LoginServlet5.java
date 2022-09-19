@@ -11,13 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/login5")
 public class LoginServlet5 extends HttpServlet{
-	
-	@Override
     public void init() {
         System.out.println("init 메서드 호출");
     }
-	
-	@Override
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
 	    request.setCharacterEncoding("utf-8");
@@ -41,7 +38,6 @@ public class LoginServlet5 extends HttpServlet{
 	    out.print(data);
     }    
     
-    @Override
     public void destroy() {
         System.out.println("destroy 메서드 호출");
     }    

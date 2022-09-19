@@ -30,21 +30,22 @@ public class GuguTest2 extends HttpServlet {
 	
 	    // for 문을 이용해 연속해서 결과를 테이블 행으로 출력
 	    for (int i = 1; i < 10; i++) {
+	    	/*if 문을 이용해 행을 나타내는 <tr> 태그에 대해 교대로 다른 배경색을 적용*/
 	    	int z = i%2;
 	    	if(z == 0) {
-	    		out.print("<tr align=center bgcolor='#acfa58'>");
-		    }else {
-		        out.print("<tr align=center bgcolor='#81bef7'>");
-		    }
-	        out.print("<td width=400 >");
+	    		out.print("<tr align=center bgcolor='#acfa58'> ");
+	    	}else {
+	    		out.print("<tr align=center bgcolor='#81bef7'> ");
+	    	}
+	        /*out.print("<tr align=center>");*/
+	        out.print("<td width=400>");
 	        out.print(dan + " *  " + i);
 	        out.print("</td>");
 	        out.print("<td width=400>");
 	        out.print(i * dan);
 	        out.print("</td>");
 	        out.print("</tr>");
-	    	
-	   }
+	    }
 	
 	    out.print("</table>");
 	}
