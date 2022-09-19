@@ -1,7 +1,8 @@
-package sec01.ex01;
+package sec01.ex02;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLEncoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,8 +37,13 @@ public class LoginServlet extends HttpServlet{
 		data += "휴대 전화 : " + user_hp;
 		data += "</body></html>";
 		out.print(data);
+		
+		user_address = URLEncoder.encode(user_address, "utf-8");
+		out.print("<a href='/pro09/second?user_id=" + user_id
+				+ "&user_pw=" + user_pw
+				+ "&user_address=" + user_address
+				+ "'>두번째 서블릿으로 보내기</a>");
 	}
-
 	@Override
 	public void init() throws ServletException {
 		System.out.println("init 메서드 호출");
@@ -47,6 +53,4 @@ public class LoginServlet extends HttpServlet{
 	public void destroy() {
 		System.out.println("destroy 메서드 호출");
 	}
-
-	
 }

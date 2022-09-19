@@ -890,3 +890,236 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2022-09-19 10:22:08.709
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-09-19 10:28:25.215
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2022-09-19 10:28:25.215
+!MESSAGE Multiple Contexts have a path of "/pro08".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2022-09-19 10:29:25.339
+!MESSAGE Could not publish server configuration for Tomcat v9.0 Server at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2022-09-19 10:29:25.339
+!MESSAGE Multiple Contexts have a path of "/pro08".
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-09-19 10:29:45.185
+!MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on �븣�젮吏� �샇�뒪�듃媛� �뾾�뒿�땲�떎 (jope.ow2.org). Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: �븣�젮吏� �샇�뒪�듃媛� �뾾�뒿�땲�떎 (jope.ow2.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:925)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1505)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:844)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1495)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1354)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1288)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2022-09-19 10:29:45.396
+!MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: jope.ow2.org
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:793)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1495)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1354)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1288)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2022-09-19 10:31:40.785
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\myJSP\workspace\pro09\WebContent\WEB-INF\lib\ojdbc6.jar
+  [+] C:\myJSP\workspace\pro09\WebContent\WEB-INF\lib\tomcat-dbcp-7.0.30.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1723)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1556)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1532)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2253)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2143)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:474)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:297)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:287)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:150)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:376)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1499)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2022-09-19 10:42:19.720
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-10.0.2\lib\jrt-fs.jar
+  [+] C:\myJSP\workspace\pro09\WebContent\WEB-INF\lib\ojdbc6.jar
+  [+] C:\myJSP\workspace\pro09\WebContent\WEB-INF\lib\tomcat-dbcp-7.0.30.jar
+  [+] C:\tomcat9\lib\servlet-api.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.base/java.lang.Thread.run(Thread.java:844)
