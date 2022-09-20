@@ -1,0 +1,6 @@
+﻿body{background-color:#0e74bc;}
+.cf:after{content:''; clear:both; display: block;}
+
+.pop{width:764px; height:460px; background:url(../images/popUp.jpg) no-repeat;}
+.popupInner{width:300px; height:467px; float:right;}
+.popupTitle>span{border:1px solid #ffffff; border-radius:10px; color:#222222; background-color:#e1c60d;}

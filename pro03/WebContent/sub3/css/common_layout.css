@@ -1,0 +1,254 @@
+﻿html{overflow: scroll;}
+/* body{background: url(../images/full.png) no-repeat center top; } */
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form{margin: 0; padding: 0; border:0;}
+body{font-style: normal; font-family:'맑은 고딕', sans-serif;}
+ul, li{list-style: none;}
+img{border: 0; vertical-align: top;}
+.cf:after{content:''; display: block; clear: both;}
+a{text-decoration: none;}
+div{box-sizing: border-box;}
+.fl{float:left;}
+
+
+body{width:100%; height:100%; font-size:1.5em;}
+h1,h2,h3 {display:none;}
+header{width:100%; height:158px;}
+footer{width:100%; height:258px;}
+
+
+
+#global{width:100%; height:160px;}
+	#globalMenu{width:100%; height: 78px;  border-bottom: 1px solid #cccccc;}
+		#mainGnb{width: 1420px; height: 78px; margin:0 auto;  overflow: hidden;}
+		#mainGnb>.topLeft>li{width:542px; height:78px; line-height: 78px;}
+		#mainGnb .topLeftLogo{display:block; height:26px; width:195px;background:url(../images/mainTopLeft.png) no-repeat center; background-size:cover; margin-top:26px;}
+		#mainGnb>.topCenter>li{width:335px; height:78px;}
+		#mainGnb .topCenterLogo{display:block; height:36px; width:335px; background:url(../images/centerlogo.png) no-repeat center; background-size:cover;  text-indent: 100%; white-space: nowrap; overflow:hidden; margin-top:21px;}
+		.language{margin: 0 5px;}
+		.language{width:100px; height:100% font-size: 0.9em;}
+		.language>select{width:100px; height: 30px; font-size: 0.9em;}
+		
+		#mainGnb>.rightGnb{width:500px; height:78px; float:right;}
+		#mainGnb>.rightGnb>li{float:right; line-height:78px; font-size:0.7em;}
+		#mainGnb>.rightGnb>li>a{margin-top:21px; padding: 2px 10px; text-decoration:none; color: #000000;}
+		#mainGnb>.rightGnb>.languageImg {padding: 0 0 0 10px; height:20px;}
+		
+	
+/* 상단 */
+#topMenuBox{position: relative; height:80px; border-bottom: 2px solid #cccccc; margin:0 auto;}
+#menuBox{width: 1420px; height:80px; margin: 0 auto;}
+	#menuBox>#topDropBox{height:80px; width:1300px; margin:0 auto; padding-left:37px;}
+	#menuBox>#topDropBox>ul>li>a{padding: 0 38px;}
+	#menuBox>div>.topMenuButton{width:30px; height: 30px; float:left; margin-top:25px; background: url(../images/allMenuBar.png) no-repeat 0 0; /* background-size: cover; */}
+	#menuBox>div>.topSearchButton{width:30px; height: 30px; float:right; margin-top:25px; background: url(../images/searchIcon.png) no-repeat 0 0; /* background-size: cover; */}
+	#menuBox>#topDropBox>ul>li{width:150px;}
+	#menuBox>#topDropBox>ul>li>a{height: 55px; display: block; float:left; text-align: center; padding: 10px 0 15px 0;  margin-right: 1px; text-decoration:none; line-height:55px; font-size: 20px; font-weight: 700; letter-spacing: -1px; color:#000000;}
+	/* #menuBox li a:hover{color: #242415;} */
+	#menuBox>#topDropBox>ul>li:hover>a{color: #0066b4; padding-bottom: 10px; border-bottom: 5px solid #2763ba;}
+	
+/* 햄버거아이콘	 */
+
+#menuBox>.topMenuButtonR{position:relative; width:1420px; margin:0 auto;}
+#totalMenu{width:1420px; height: 1680px; background: #ffffff; position:absolute; top: 112px; left:0px;  display: none; z-index:1000; border:1px solid #cccccc;}
+
+
+.topMenuX{width:30px; height: 30px; float:left; margin-top:25px; background: url(../images/xIcon.png) no-repeat 0 0;}
+
+/* totalMenu */
+
+/* totalMenuTop */
+.gray{color: #aaaaaa;}
+.totalMenuTop{padding:35px 60px 35px 60px; border-bottom: 1px solid #cccccc;}
+	.totalMenuTop>li>form>p{font-size:33px; font-weight:bold; margin-right:20px; line-height:59px; letter-spacing:-2px;}
+	.totalMenuTop>li>form>input{height:55px; width:315px; font-size:20px; padding-left:20px; border:1px solid #cccccc; letter-spacing:-2px;}
+
+
+	.totalMenuTopRight{float:right; margin-top:16px;}
+	.totalMenuTopRight>a{color:#000000; font-size:21px;}
+	.totalMenuTopRight>a>img{margin-left:10px; margin-top:2px;}
+	.totalMenuTopRight>a>img.nextRight{margin-right:15px;padding-right:25px; border-right:1px solid #cccccc;}
+
+/* totalMenuSection */
+
+.totalMenuSection{width:1420px; height:1000px;}
+.totalMenuSection>li{width:221px; height: 1470px; padding:50px 0 0px 59px; border-right:1px solid #cccccc;}
+.totalMenuSection>.totalMenuSectionLast{border-right:none;}
+
+.totalMenuSection>li>dl{margin-bottom:30px;}
+.totalMenuSection>li>dl>dt{color:#000000; font-weight:bold; font-size:20px; margin-bottom:15px; letter-spacing:-2px;}
+.totalMenuSection>li>dl>dt>a{color:#000000; font-weight:bold; font-size:20px; margin-bottom:15px; letter-spacing:-2px;}
+.totalMenuSection>li>dl>dd>a{display:block; font-size:19px; color:#777777; margin-bottom:15px; letter-spacing:-2px;}
+.totalMenuSection>li>a{display:block; font-size:25px; color:#2763ba; font-weight:bold; letter-spacing:-2px; margin-bottom:50px;}
+
+
+/* 2depth start */	
+#menuBox li div{position: absolute; top: 80px; left: 0; width: 100%; height:475px; display: none; color: #333333; padding: 20px 0; border-left:1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 3px solid #2763ba; background: #ffffff; box-sizing: border-box; z-index:10;}
+	#topDropBox>ul{display:table; margin:0 auto; table-layout:fixed;}
+	#topDropBox>ul>li{display:table-cell;}
+	#menuBox li .mainSubMenu1{width: 200px; height:431px; padding-left:30px; padding-right:30px; float: left; border-left: 2px groove #efefef; letter-spacing: -1px;}
+	#menuBox li .mainSubMenu2{width: 200px; height:431px; float: left; border-left: 2px groove #efefef; letter-spacing: -1px;  padding-left:30px; padding-right:30px;}
+	
+ 	#menuBox li .m_width{width: 1420px; margin: 0 auto;}
+	#menuBox li:hover .topMenuTitle{display: block;}
+	
+	#menuBox li ul li dl dt {line-height: 35px; font-size: 0.7em;  font-weight: bold; }
+	#menuBox li ul li dl dt a{color: #000000; font-weight: bold;}
+
+	#menuBox li ul li dl dd a{color: #777777; font-size: 0.7em; line-height: 32px; padding-left: 10px;}
+	
+/* 진료안내 이미지 */
+.medicalOfficeImg{width: 400px; height:431px; border-right:2px groove #efefef;  border-left:2px groove #efefef; padding-left:30px; float:left;}
+.medicalOfficeImg>.medicalOfficeIcon{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; margin-top:20px;}
+.medicalOfficeImg>.medicalOfficeIcon>p.medicalOfficeImgP1{color:#008ace; font-size:0.8em; font-weight:bold; padding:22px 29px 10px;}
+.medicalOfficeImg>.medicalOfficeIcon>p.medicalOfficeImgP2{color:#111111; font-size:0.6em; padding:8px 39px 4px;}
+.medicalOfficeImg>.medicalOfficeIcon>p.medicalOfficeImgP3{color:#111111; font-size:0.6em; padding-left:39px;}
+
+.medicalOfficeImg>.resBtn{width:364px; height:100px; margin-top:30px;}
+.medicalOfficeImg>.resBtn>li>.resBtn1{display:block; width: 140px; height: 40px; float:left; margin:10px 0 10px 20px; border:1px solid #2763ba; font-size:0.7em; font-weight:bold; text-align:center; line-height:40px; background-color:#2763ba; color:#ffffff;}
+.medicalOfficeImg>.resBtn>li>.resBtn2{display:block; width: 140px; height: 40px; float:right; margin:10px 20px 10px 20px; border:1px solid #000000; font-size:0.7em; font-weight:bold; text-align:center; line-height:40px; background-color:#ffffff; color:#333333;}
+.medicalOfficeImg>.resTel{width:364px; height:30px;}
+.medicalOfficeImg>.resTel>.resTel1{height:40px; width:60px; float:left; margin-left:10px; font-size:0.6em; line-height:40px; color:#555555;}
+.medicalOfficeImg>.resTel>.resTel2{height:40px; width:150px; float:left;margin-left:30px; line-height:40px; color:#222222; font-weight:bold;}
+	
+/* 이용안내 이미지 */
+.operationGuideImg{width: 423px; height:431px; border-right:2px groove #efefef;  border-left:2px groove #efefef; float:left;}
+	.operationGuideImg>.operationGuideIcon{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -367px -379px; margin-top: 20px; margin-left:30px;}
+	.operationGuideImg>.operationGuideIcon>p.operationGuideImgP1{color:#008ace; font-size:0.75em; font-weight:bold; padding:22px 29px 10px;}
+	.operationGuideImg>.operationGuideIcon>p.operationGuideImgP2{color:#111111; font-size:0.6em; padding:8px 39px 4px;}
+	.operationGuideImg>.operationGuideIcon>p.operationGuideImgP3{color:#111111; font-size:0.6em; padding-left:39px;}	
+	
+	.operationGuideResTel{width:430px; height:100px; display:table; table-layout:fixed; }
+	.operationGuideResTel>li{width:142px; float:left; margin-top:30px; text-align: center; display: table-cell; font-size:0.7em; font-weight:bold; line-height:50px;}
+	.operationGuideResTel>li>.operationGuideResTelIcon1{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -732px 0px;  margin-left:31px;}
+	.operationGuideResTel>li>.operationGuideResTelIcon2{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -814px 0px;  margin-left:31px;}
+	.operationGuideResTel>li>.operationGuideResTelIcon3{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -896px 0px; margin-left:31px;}
+		
+	/* 건강정보 */
+.healthInfo>ul>li>dl>dd>a>img{width:137px; height: 85px;}
+.healthInfo>ul>li>dl>dd>a>p{margin-top:20px;line-height:25px; text-align:bottom; margin-bottom:30px;}
+.healthyBodyLastTilte{margin-top:54px;}
+
+.healthInfoImg{width: 423px; height:431px; border-right:2px groove #efefef;  border-left:2px groove #efefef; float:left;}
+	.healthInfoImg>.healthInfoIcon1{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: 0px -1191px; margin-top: 20px; margin-left:30px;}
+	.healthInfoImg>.healthInfoIcon2{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: 0px -396px; margin-top: 20px; margin-left:30px;}
+	.healthInfoImg>a>p.healthInfoImgP1{color:#008ace; font-size:0.75em; font-weight:bold; padding:22px 29px 10px;}
+	.healthInfoImg>a>p.healthInfoImgP2{color:#111111; font-size:0.6em; padding:8px 39px 4px; }
+	.healthInfoImg>a>p.healthInfoImgP3{color:#111111; font-size:0.6em; padding-left:39px;}	   
+
+		
+/* 고객참여 이미지*/
+.clientParticipationImg{width: 423px; height:431px; border-right:2px groove #efefef;  border-left:2px groove #efefef; float:left;}
+	.clientParticipationImg>.clientParticipationIcon{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -366px -1183px; margin-top: 20px; margin-left:30px;}
+	.clientParticipationImg>.clientParticipationIcon>p.clientParticipationImgP1{color:#008ace; font-size:0.75em; font-weight:bold; padding:22px 29px 10px;}
+	.clientParticipationImg>.clientParticipationIcon>p.clientParticipationImgP2{color:#111111; font-size:0.6em; padding:8px 39px 4px;}
+	.clientParticipationImg>.clientParticipationIcon>p.clientParticipationImgP3{color:#111111; font-size:0.6em; padding-left:39px;}	
+
+	.clientParticipationResTel{width:430px; height:100px; display:table; table-layout:fixed; }
+	.clientParticipationResTel>li{width:142px; float:left; margin-top:30px; text-align: center; display: table-cell; font-size:0.7em; font-weight:bold; line-height:50px;}
+	.clientParticipationResTel>li>.clientParticipationResTelIcon1{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -732px -82px;  margin-left:31px;}
+	.clientParticipationResTel>li>.clientParticipationResTelIcon2{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -814px -82px;  margin-left:31px;}
+	.clientParticipationResTel>li>.clientParticipationResTelIcon3{width:80px; height:80px; display:block; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -896px -82px; margin-left:31px;}
+
+/* 병원소개 */
+	
+.introduceHospitalImg{width: 423px; height:431px; border-right:2px groove #efefef;  border-left:2px groove #efefef; float:left;}
+	.introduceHospitalImg>.introduceHospitalIcon1{display:block; width:364px; height:244px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: -364px 0px; margin-top: 20px; margin-left:30px;}
+	.introduceHospitalImg>.introduceHospitalIcon2{display:block; width:364px; height:128px; background:url(../images/slideMenuIcon.png) no-repeat; background-position: 0px -659px; margin-top: 20px; margin-left:30px;}
+	.introduceHospitalImg>a>p.introduceHospitalImgP1{color:#008ace; font-size:0.75em; font-weight:bold; padding:22px 29px 10px;}
+	.introduceHospitalImg>a>p.introduceHospitalImgP2{color:#111111; font-size:0.6em; padding:8px 39px 4px; }
+	.introduceHospitalImg>a>p.introduceHospitalImgP3{color:#111111; font-size:0.6em; padding-left:39px;}
+	
+	
+section{width: 100%; height:258px;}
+
+
+#board{width:1420px; height: 2200px; margin:0 auto;}
+
+/* aside 메뉴 */
+
+/* 로그인박스 */
+#loginBox{width: 100%px; height: 240px; border:2px solid #0066b4;  margin:100px 0 0 0;}
+	#loginBox>.loginLogo{text-align: center; margin-top:10px;}
+	#loginBox>.loginLogo>img{width: 200px; height: 23px; padding:5px; border-bottom: 1px solid #cccccc;}
+	#loginBox>p{width:210px; font-size:0.7em; width:200px; margin:0 auto; padding: 20px 0; letter-spacing:-1px; text-align:center;}
+	#loginBox>p>span{font-weight: bold; font-size:1.3em; padding-right:10px; color: #00468c;}
+	#loginBox>.loginInfo{width: 80%; height:88px; margin:0 auto;}
+	#loginBox>.loginInfo>ul{width:90px; height:100%;}
+	#loginBox>div .resevationCheck{width:75px; float:left; border:1px solid #0066b4; font-size:0.5em; padding: 10px 5px; font-weight:bold; text-align:center; margin-bottom:5px;}
+	#loginBox>div .medicalHistory{width:75px; float:left; border:1px solid #0066b4; font-size:0.5em; padding: 10px 5px;font-weight:bold; text-align:center;}
+	#loginBox>.loginInfo>ul>li>a{color: #0066b4; letter-spacing:-1px;}
+	#loginBox>.loginInfo>.loginQuickMenu{float:left; padding-left:5px;}
+	#loginBox>.loginInfo>.loginQuickMenu>li>a{display:block;  height:20px; font-size:0.5em; margin-top:5px;}
+	#loginBox>.loginInfo>.loginQuickBar{float:left;}
+	
+	
+	
+	
+	
+	#loginBox>.loginBottom>li>a{display:block; height:20px; background: url(../images/dot.gif) no-repeat 0px 6px; background-size:0.5em; letter-spacing:-1px; text-align: center; font-size:0.5em;}
+	#loginBox>.loginBottom>.customInfo{float:left; width:105px;}
+	#loginBox>.loginBottom>.logOut{float:left; width:85px;}
+	#loginBox>.loginBottom{width: 190px; margin:0 auto; height:15px; margin-top:5px;}
+
+
+	
+#board>#asidMenu{float:left; width:240px; height: 1300px;}
+#asidMenuList>ul>li>a{display:block; font-size: 20px; font-weight: bold; padding:10px 0 10px 15px; border-top: 1px solid #9b9b8c; line-height:50px; font-style:none; color: #000000;}
+#asidMenuList>ul>li.this{background-color:#2763ba;}
+#asidMenuList>ul>li.this>a{color:#ffffff;}
+.sub>li>a{display: none; height: 40px; color: #000000;}
+#asidMenuList>ul>li:hover a{display:block; width: 225px;}
+.sub{background:#ffffff; color:#000000;}
+#asidMenuTitle{font-size:1.4em; line-height:105px;}
+
+
+footer{background: #cccccc;}
+	#footerTop{width:100%; height:60px; background:#22263b;}
+		#footerTop>div{width:1420px; height:60px; margin:0 auto;}
+		#footerTop>div>.footerTopMenu1{width:800px; height:60px; float:left;}
+		#footerTop>div>.footerTopMenu1>li{float:left;}
+		#footerTop>div>.footerTopMenu1>li>a{display:block; color:#ffffff; border-right:1px solid #31354e; font-size:0.65em; margin:19px 15px 0 0; padding-right:15px;}
+		#footerTop>div>.footerTopMenu1>li>.footerTopMenuLast{border:none;}
+		
+		#footerTop>div>.footerTopMenu2{width:620px; height:60px; float:right;}
+		#footerTop>div>.footerTopMenu2>li{float:right;}
+		#footerTop>div>.footerTopMenu2>li>a{display:block; font-size: 0.6em; color:#77787e; margin:20px 0 0 30px;}
+
+	
+	#footerMiddle{width:100%; height:60px; background:#31354e; border-bottom:1px solid #22263b;}
+		#footerMiddle>div{width:1420px; height:60px; margin:0 auto;}
+		#footerMiddle>div>.footerMiddleMenu1{width:1420px; height:60px; float:left;}
+		#footerMiddle>div>.footerMiddleMenu1>li{float:left;}
+		#footerMiddle>div>.footerMiddleMenu1>li>a{display:block; color:#ffffff; border-right:1px solid #31354e; font-size:0.65em; margin:19px 15px 0 0; padding-right:15px;}
+		#footerMiddle>div>.footerMiddleMenu1>li>.footerMiddleMenuLast{border:none;}
+		
+		#footerMiddle>div>.footerMiddleMenu2{width:620px; height:80px; float:right;}
+		#footerMiddle>div>.footerMiddleMenu2>li{float:right;}
+		#footerMiddle>div>.footerMiddleMenu2>li>a{display:block; font-size: 0.6em; color:#77787e; margin:20px 0 0 30px;}
+		#footerMiddle>div>.footerMiddleMenu1>li.footerMiddleTitle>a{font-weight:bold; color: #a4e1ff;}
+	#footerBottom{width:100%; height:138px; background:#31354e;}
+	#footerBottom>div{width:1420px; height:138px; margin:0 auto;}
+	#footerBottom>div>#footerBottomLeft{width:700px; height:138px;}
+	#footerBottom>div>#footerBottomLeft>address{font-size:0.6em; color: #999999; margin-top:50px;}
+	#footerBottom>div>#footerBottomRight{width:720px; height:138px;}
+	#footerBottom>div>#footerBottomRight>.footerBottomR1{width:145px; height:34px; background:url(../images/Icons.png) no-repeat; background-position: -124px -173px;}
+	#footerBottom>div>#footerBottomRight>.footerBottomR2{width:134px; height:34px; background:url(../images/Icons.png) no-repeat; background-position: 0px -90px;}
+	#footerBottom>div>#footerBottomRight>.footerBottomR3{width:132px; height:34px; background:url(../images/Icons.png) no-repeat; background-position: -336px -159px;}
+	.fbr{margin:50px 50px 0 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

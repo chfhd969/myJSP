@@ -1,0 +1,156 @@
+html{overflow: scroll;}
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form{margin: 0; padding: 0; border:0;}
+body{font-style: normal; font-family:'맑은 고딕', sans-serif;}
+ul, li{list-style: none;}
+img{border: 0; vertical-align: top;}
+.cf:after{content:''; display: block; clear: both;}
+a{text-decoration: none;}
+div{box-sizing: border-box;}
+.fl{float:left;}
+
+
+body{font-size:1.5em;}
+h1,h2 {display:none;}
+header{width:100%; height:158px;}
+footer{width:100%; height:258px;}
+
+	
+article{width: 100%; height:50px;}
+
+	#step{width:100%; height:50px; background-color: #2763ba; margin:0 auto;}
+	#quickStep{width: 1420px; height:50px; margin: 0 auto;}
+	.home{width: 30px; height: 30px; float:left; background: url(../../images/home.png) no-repeat 10px 10px; border-left:1px solid #5d8acb; padding:10px; }
+	
+	#quickStep>ul>.homeIcon{display: block; width: 50px; height: 50px; background-color: #2763ba; border-right:1px solid #5d8acb;}
+	
+	
+	#quickStep li.quickMenu{float:left; width:200px; color:#ffffff; text-align: left; height: 50px; border-right:1px solid #5d8acb; background:url(../../images/underarrow_white.png) no-repeat 90% 15px; background-size:20px; line-height:50px;}
+
+	.quickMenu>a{padding-left:15px;}
+	#quickStep .quickMenu>div{position:relative;}
+	#quickStep .quickWidth .dropMenu{position: absolute; left:0; top:0px; width:100%; height: 250px;}
+	#quickStep li div{width: 100%; display: none; box-sizing: border-box;}
+	#quickStep li:hover .quickMenuTitle{display:block;}
+
+	#quickStep .dropMenu li{height:50px; background:#ffffff; padding-left:15px; border-bottom:1px solid #bbbbbb; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb;}
+	#quickStep .dropMenu li a{color: #000000; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+	
+	
+	#quickStep li.request3{border-right:1px solid #5d8acb;}
+	
+	#quickStep li.bookingCheck{display:block; width: 250px; height: 50px; float: right; background:url(../../images/bcQuickMenu.png) no-repeat;}
+
+	#quickStep li.bookingCheck a{display:block; float: left; text-align: center; color: #ffffff; font-weight: bold; margin:0 0 0 33px;}
+	
+	#quickStep>ul>li>a{display: block; line-height:50px; font-size:20px; color: #fff;}
+
+	#quickStep li a{display: block; font-size:20px; color: #fff;}
+
+
+/* .menuBox{width: 950px; height: 100px; float:right; background: #dddddd;} */
+
+
+
+	
+section{width: 100%; height:258px;}
+
+
+#board{width:1420px; height: 1300px; margin:0 auto;}
+
+
+/* 게시판 메뉴 */
+
+#qustionMenu{float:left; width:1180px; height:1300px; margin:0 auto; padding: 100px 0 0 0;}
+#qustionMenuTitle{font-size:1.4em; padding-left:58px;line-height:105px;}
+
+
+/* 게시판 top */
+#serchBar{width:95%; height: 85px; border-bottom: 2px solid #000000; border-top: 2px solid #cccccc; border-bottom: 2px solid #cccccc; margin: 0 auto; float:right;}
+#serchBar>ul{padding-top: 20px;}
+#serchBar>ul>li>input{display:block; width: 15%; float:right; height:40px; border: 1px solid #cccccc; font-size: 0.7em;}
+#serchBar>ul>li>select{display:block; width:95px; height:44px; float:right; margin-right:20px; border: 1px solid #000000; font-size:0.6em;}
+#serchBar>ul>li>a{display:block;/*  position: absolute; */ left: 0; bottom: 0; padding-left: 10px; padding-bottom:5px; color: #000000;}
+#serchBar>ul>li>button{display:block; float: right; margin:0 30px 0 20px; width:60px; height:45px; color:#ffffff; background-color:#2763ba;}
+.totalPage{width:50px; width:95%; float: right;}
+.totalPage>ul>li{float: left;}
+.totalPage>ul>li{font-size:0.8em; color:#999999; float: left; margin-top:20px;}
+.top{border-top: 1px solid #2763ba;}
+
+#qustionList{width: 95%; height: 722px; float:right;}
+
+#qustionList>h3{display: none;}
+#qustionList>ul>li>ul>li{font-size:0.8em; color: #444444;}
+#qustionList>ul>li>ul>li>a{color: #444444;}
+#qustionList>.topTitle{background-color: #eeeeee; height:50px; }
+#qustionList>.topTitle .top{ font-weight: bold;}
+#qustionList>.topTitle ul>li{display: block; height:50px; text-align: center; line-height: 49px; border-bottom: 1px solid #dddddd; }
+#qustionList>.topTitle div>ul>.title{padding-left:8px; }
+#qustionList>.topTitle>li>ul>.title{display: block; height:50px; text-align: left; line-height: 49px; border-bottom: 1px solid #dddddd; padding-left:8px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+#qustionList>.topTitle ul>.num, .title{float: left;}
+/* #qustionList>.topTitle ul>li:nth-child(1){float: left;} */
+#qustionList>.topTitle ul>.author, .view, .date{float: right; }
+#qustionList>.topTitle ul>.num{height:50px; width: 100px; }
+#qustionList>.topTitle ul>.title{height:50px; width: 713px; }
+#qustionList>.topTitle ul>.author{height:50px; width:100px; }
+#qustionList>.topTitle ul>.view{height:50px; width:100px;  }
+#qustionList>.topTitle ul>.date{height:50px; width:100px;  }
+
+#qustionList>.topTitle .notice>.num>span{display: block; height: 30px; width:60px; border: 1px solid red; border-radius: 2px; line-height: 30px; background-color: #ff2626; color: #ffffff; margin:0 auto; margin-top:10px;}
+
+
+
+#page{height:147px; width:95%; margin:0 auto; float: right;}
+#page div{height:147px; width:50%; margin:0 auto;}
+#page div ul {height:55px; width:500px; margin-left:40px;}
+#page div ul li{float:left; margin-left:30px; width:30px;}
+#page div ul li{line-height:147px;}
+#page div>ul>li>a{color: #000000;}
+#page .active{cursor: default; color: #d90000; font-weight: bold;}
+.prev, .next{text-indent: -99999px;}
+.prev{background: url(../images/arrow_left.png) no-repeat center center; background-size: 7px;}
+.next{background: url(../images/arrow_right.png) no-repeat center center; background-size: 7px;}
+
+#page .pageWrite{display:block;}
+.write{float:right; width:70px; height: 30px; background: #0066b4; color: #ffffff; border: 1px solid #0066b4; text-align:center; line-height:30px; font-size:0.8em;}
+
+footer{width: 100%; height:200px; background: rgba(0,0,255,0.3);}
+
+section{background-color:#eeeeee;}
+#board{width:1420px; height: 1300px; margin:0 auto; padding:0 360px;}
+	#memberLogin{width:700px; height: 1000px; background-color:#ffffff; margin-top: 150px; border-top:3px solid #2763ba; padding: 80px 100px; letter-spacing: -2px;}
+		#memberLogin>.memberLoginTop{width:41px; height:78px;background:url(../images/spr_msg.png) no-repeat -164px 0; margin:0 auto;}
+		#memberLogin>.loginTitle{text-align:center; font-size:1.5em; margin-bottom:30px;}
+		#memberLogin>.loginText{margin-top:15px; color:#555555;}
+		#memberLogin>p{text-align:center; line-height:45px; font-size:0.9em;}
+		#memberLogin>#idPassword>#id{width:481px; height:20px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#name{width:481px; height:20px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#email{width:239px; height:20px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#emailSelect{width:214px; height:43px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#tel{width:399px; height:20px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#telSelect{width:75px; height:43px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top: 8px; margin-bottom: 10px;}
+		#memberLogin>#idPassword>#password{width:481px; height:20px; font-size:0.8em; padding: 10px 0 10px 15px; margin-top:8px;}
+		#memberLogin>#idPassword>.loginButton{display: block; width:500px; height: 72px; text-align:center; color: #ffffff; font-size:1.1em; font-weight:bold; line-height:72px; background-color: #2763ba; margin-top:20px;}
+		#memberLogin>#idPassword>.loginButton:hover{cursor:pointer;}
+		#memberLogin>#idPassword>div{text-align:center; margin-top:20px;}
+		#memberLogin>#idPassword>div>a{color: #555555; font-size:0.8em;}
+		#memberLogin>#idPassword>div>.findIdPwd{border-right: 1px solid #aaaaaa; padding-right:20px;}
+		#memberLogin>#idPassword>div>.membership{padding-left:20px;}
+		#memberLogin>.naverLogin{display: block; width:500px; height: 72px; text-align:center; color: #666666; font-size:1.1em; font-weight:bold; line-height:72px; border:1px solid #00c63b; margin-top:40px;}
+		#memberLogin>.memberLoginBottom{width:500px; height: 110px; margin-top:50px;}
+		#memberLogin>.memberLoginBottom>li{float: left; width:247px; height: 95px; border:1px solid #cccccc; text-align:center; line-height:95px;}
+		#memberLogin>.memberLoginBottom>.memberLoginRes{color: #333333;  font-size:0.9em;}
+		#memberLogin>.memberLoginBottom>.memberLoginTel{color: #2763c3; font-weight:bold;  font-size:1.1em; border-left: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
