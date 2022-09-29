@@ -1,0 +1,146 @@
+﻿html{overflow: scroll;}
+body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form{margin: 0; padding: 0; border:0;}
+body{font-style: normal; font-family:'맑은 고딕', sans-serif;}
+ul, li{list-style: none;}
+img{border: 0; vertical-align: top;}
+.cf:after{content:''; display: block; clear: both;}
+a{text-decoration: none;}
+div{box-sizing: border-box;}
+.fl{float:left;}
+
+
+body{font-size:1.5em;}
+h1,h2 {display:none;}
+header{width:100%; height:158px;}
+footer{width:100%; height:333px;}
+
+	
+article{width: 100%; height:50px;}
+
+	#step{width:100%; height:50px; background-color: #2763ba; margin:0 auto;}
+	#quickStep{width: 1420px; height:50px; margin: 0 auto;}
+	.home{width: 30px; height: 30px; float:left; background: url(../../images/home.png) no-repeat 10px 10px; border-left:1px solid #5d8acb; padding:10px; }
+	
+	#quickStep>ul>.homeIcon{display: block; width: 50px; height: 50px; background-color: #2763ba; border-right:1px solid #5d8acb;}
+	
+	
+	#quickStep li.quickMenu{float:left; width:200px; color:#ffffff; text-align: left; height: 50px; border-right:1px solid #5d8acb; background:url(../../images/underarrow_white.png) no-repeat 90% 15px; background-size:20px; line-height:50px;}
+
+	.quickMenu>a{padding-left:15px;}
+	#quickStep .quickMenu>div{position:relative;}
+	#quickStep .quickWidth .dropMenu{position: absolute; left:0; top:0px; width:100%; height: 250px;}
+	#quickStep li div{width: 100%; display: none; box-sizing: border-box;}
+	#quickStep li:hover .quickMenuTitle{display:block;}
+
+	#quickStep .dropMenu li{height:50px; background:#ffffff; padding-left:15px; border-bottom:1px solid #bbbbbb; border-left:1px solid #bbbbbb; border-right:1px solid #bbbbbb;}
+	#quickStep .dropMenu li a{color: #000000; overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+	
+	
+	#quickStep li.request3{border-right:1px solid #5d8acb;}
+	
+	#quickStep li.bookingCheck{display:block; width: 250px; height: 50px; float: right; background:url(../../images/bcQuickMenu.png) no-repeat;}
+
+	#quickStep li.bookingCheck a{display:block; float: left; text-align: center; color: #ffffff; font-weight: bold; margin:0 0 0 33px;}
+	
+	#quickStep>ul>li>a{display: block; line-height:50px; font-size:20px; color: #fff;}
+
+	#quickStep li a{display: block; font-size:20px; color: #fff;}
+
+
+/* .menuBox{width: 950px; height: 100px; float:right; background: #dddddd;} */
+
+
+
+	
+section{width: 100%; height:1300px;}
+
+
+#board{width:1420px; height: 2200px; margin:0 auto;}
+
+
+/* 게시판 메뉴 */
+
+#qustionMenu{float:left; width:1180px; height:1300px; margin:0 auto; padding: 100px 0 0 0;}
+#qustionMenuTitle{float: right; width: 95%; font-size:1.4em; line-height:105px; border-bottom:2px solid #cccccc; margin-bottom:20px;}
+
+
+/* 게시판 top */
+#serchBar{width:95%; height: 125px; border-bottom: 2px solid #cccccc; border: 2px solid #cccccc; margin: 0 auto; float:right; background-color:#f3f4f8;}
+#serchBar>ul{padding-top: 38px;}
+#serchBar>ul>li>input{display:block; width: 80%; float:right; height:40px; border: 1px solid #cccccc; font-size: 0.7em;}
+#serchBar>ul>li>a{display:block;/*  position: absolute; */ left: 0; bottom: 0; padding-left: 10px; padding-bottom:5px; color: #000000;}
+#serchBar>ul>li>button{display:block; float: right; margin:0 30px 0 20px; width:60px; height:45px; color:#ffffff; background-color:#2763ba;}
+.serchBarQnA{margin-left:30px; }
+#serchBox{width:95%; height: 125px; float:right; margin:0 auto; padding:20px 20px 20px 0;}
+#serchBox>ul>li{float:left; border:1px solid #cccccc; height:80px; width:160px}
+#serchBox>ul>li>a{display:block; color: #666666;text-align:center; line-height:80px; letter-spacing:-2px; font-size:0.9em;}
+
+.totalPage{width:50px; width:95%; float: right;}
+.totalPage>ul>li{float: left;}
+.totalPage>ul>li{font-size:0.8em; color:#999999; float: left;}
+
+.top{border-top: 1px solid #2763ba;}
+
+
+
+
+#qustionList{width: 95%; height: 974px; float:right;}
+
+#qustionList>h3{display: none;}
+#qustionList>ul>li>ul>li{font-size:0.8em; color: #444444;}
+#qustionList>ul>li>ul>li>a{color: #444444;}
+#qustionList>.topTitle{background-color: #eeeeee; height:50px;}
+#qustionList>.topTitle .top{font-weight: bold;}
+#qustionList>.topTitle ul li{height:50px; text-align: center; line-height: 49px;}
+#qustionList>.topTitle div>ul .title{padding-left:8px; }
+#qustionList>.topTitle>li ul>.title{display: block; height:50px; text-align: left; line-height: 49px; padding-left:3px; overflow: hidden; text-overflow: ellipsis; white-space:nowrap; width:915px;}
+#qustionList>.topTitle>li ul>.num, .title,.topClass{float: left;}
+/* #qustionList>.topTitle ul>li:nth-child(1){float: left;} */
+#qustionList>.topTitle>li ul>.author, .view, .date{float: right; }
+#qustionList>.topTitle>li ul>.num{height:50px; width: 100px; }
+#qustionList>.topTitle>li ul>.topClass{height:50px; width: 150px; }
+#qustionList>.topTitle>li ul>.title{height:50px; width: 865px; }
+#qustionList>.topTitle>li ul>.author{height:50px; width:100px; }
+#qustionList>.topTitle>li ul>.view{height:50px; width:100px;  }
+#qustionList>.topTitle>li ul>.date{height:50px; width:100px;  }
+
+
+
+.topTitleMenu {list-style: none; width: 1118px; margin-top: 0px; border-bottom:1px dotted #000000; height:101px; cursor:pointer; background-color:ffffff;}
+.topTitleMenu>li{margin-top:26px;}
+.qnAL{width:1118px; border-bottom:2px solid #1565c6; border-left:2px solid #1565c6; border-right:2px solid #1565c6;display:none; padding:30px; border-radius:0 0 60px 60px;}
+.qnAL>img{width:1000px;}
+
+
+#page{height:147px; width:95%; margin:0 auto; float: right;}
+#page div{height:147px; width:50%; margin:0 auto;}
+#page div ul {height:55px; width:500px; margin-left:40px;}
+#page div ul li{float:left; margin-left:30px; width:30px;}
+#page div ul li{line-height:147px;}
+#page div>ul>li>a{color: #000000;}
+#page .active{cursor: default; color: #d90000; font-weight: bold;}
+.prev, .next{text-indent: -99999px;}
+.prev{background: url(../images/arrow_left.png) no-repeat center center; background-size: 7px;}
+.next{background: url(../images/arrow_right.png) no-repeat center center; background-size: 7px;}
+
+#page .pageWrite{display:block;}
+.write{float:right; width:70px; height: 30px; background: #0066b4; color: #ffffff; border: 1px solid #0066b4; text-align:center; line-height:30px; font-size:0.8em;}
+
+footer{width: 100%; height:200px; background: rgba(0,0,255,0.3);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
