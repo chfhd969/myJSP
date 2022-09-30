@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	import="java.util.*,sec01.ex01.*"
+	import="java.util.*,sec02.ex01.*"
     pageEncoding="UTF-8"
     isELIgnored="false"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<c:set var="contextPath" value="${pageContext.request.contextPath }"/>     
 
 <!DOCTYPE html>
 <html>
@@ -52,6 +53,6 @@
 			</c:when>
 		</c:choose>
 	</table>
-	<a href="#"><p class="cls2">회원가입하기</p></a>
+	<a href="${contextPath}/member/memberForm.do"><p class="cls2">회원가입하기</p></a>
 </body>
 </html>

@@ -1,6 +1,6 @@
-ï»¿html{overflow: scroll;}
+html{overflow: scroll;}
 body, div, ul, li, dl, dt, dd, ol, p, h1, h2, h3, h4, h5, h6, form{margin: 0; padding: 0; border:0;}
-body{font-style: normal; font-family:'ë§‘ì€ ê³ ë”•', sans-serif;}
+body{font-style: normal; font-family:'¸¼Àº °íµñ', sans-serif;}
 ul, li{list-style: none;}
 img{border: 0; vertical-align: top;}
 .cf:after{content:''; display: block; clear: both;}
@@ -58,13 +58,13 @@ section{width: 100%; height:1300px;}
 #board{width:1420px; height: 2200px; margin:0 auto;}
 
 
-/* ê²Œì‹œíŒ ë©”ë‰´ */
+/* °Ô½ÃÆÇ ¸Þ´º */
 
-#qustionMenu{float:left; width:1180px; height:1300px; margin:0 auto; padding: 100px 0 0 0;}
+#qustionMenu{float:left; width:1180px; margin:0 auto; padding: 100px 0 0 0;}
 #qustionMenuTitle{float: right; width: 95%; font-size:1.4em; line-height:105px; border-bottom:2px solid #cccccc; margin-bottom:20px;}
 
 
-/* ê²Œì‹œíŒ top */
+/* °Ô½ÃÆÇ top */
 #serchBar{width:95%; height: 125px; border-bottom: 2px solid #cccccc; border: 2px solid #cccccc; margin: 0 auto; float:right; background-color:#f3f4f8;}
 #serchBar>ul{padding-top: 38px;}
 #serchBar>ul>li>input{display:block; width: 80%; float:right; height:40px; border: 1px solid #cccccc; font-size: 0.7em;}
@@ -84,7 +84,7 @@ section{width: 100%; height:1300px;}
 
 
 
-#qustionList{width: 95%; height: 974px; float:right;}
+#qustionList{width: 95%; float:right;}
 
 #qustionList>h3{display: none;}
 #qustionList>ul>li>ul>li{font-size:0.8em; color: #444444;}
@@ -112,8 +112,8 @@ section{width: 100%; height:1300px;}
 .qnAL>img{width:1000px;}
 
 
-#page{height:147px; width:95%; margin:0 auto; float: right;}
-#page div{height:147px; width:50%; margin:0 auto;}
+#page{width:95%; margin:0 auto; float: right;}
+#page div{ width:50%; margin:0 auto;}
 #page div ul {height:55px; width:500px; margin-left:40px;}
 #page div ul li{float:left; margin-left:30px; width:30px;}
 #page div ul li{line-height:147px;}

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/common_layout.css"/>
 <link rel="stylesheet" href="css/style.css"/>
 <script src="/project07/js/jquery-1.12.3.js"></script>
-<script src="/project07/script.js"></script>
+<script src="/project07/js/script.js"></script>
 <script>
 function fn_sendMember(){
    // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
